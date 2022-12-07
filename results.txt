@@ -1,0 +1,10 @@
+ResNet50
+
+Training Error using artificial training and validation sets:
+Average loss: 0.0014, Accuracy: 0.9536
+
+Results on ground truth test set:
+Top 1 err:  tensor(0.7922, device='cuda:0')
+Top 5 err:  tensor(0.5574, device='cuda:0')
+20.78% accuracy
+
