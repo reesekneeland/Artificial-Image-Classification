@@ -1,10 +1,10 @@
 #!/bin/bash -l        
 #SBATCH --time=8:00:00
 #SBATCH --ntasks=8
-#SBATCH --mem=10g
-#SBATCH --tmp=10g
+#SBATCH --mem=30g
+#SBATCH --tmp=30g
 #SBATCH --mail-type=ALL  
-#SBATCH --mail-user=kneel027@umn.edu 
+#SBATCH --mail-user=bhand092@umn.edu 
 #SBATCH -p a100-8
 #SBATCH --gres=gpu:a100:1
 
@@ -12,4 +12,10 @@ cd /home/csci5527/kneel027/Artificial-Image-Classification/stable-diffusion
 
 export PATH=/home/csci5527/kneel027/miniconda/envs/ldm/bin:$PATH
 
-python scripts/txt2img.py --prompt "a photograph of an astronaut riding a horse" --plms
+python scripts/txt2img.py --prompt "accordian" --plms --H 256 --W 256 --f 4
+python scripts/txt2img.py --prompt "airplane" --plms --H 256 --W 256 --f 4
+python scripts/txt2img.py --prompt "ant" --plms --H 256 --W 256 --f 4
+python scripts/txt2img.py --prompt "antelope" --plms --H 256 --W 256 --f 4
+python scripts/txt2img.py --prompt "apple" --plms --H 256 --W 256 --f 4
+python scripts/txt2img.py --prompt "armadillo" --plms --H 256 --W 256 --f 4
+
