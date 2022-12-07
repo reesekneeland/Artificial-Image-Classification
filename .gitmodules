@@ -1,3 +1,6 @@
 [submodule "stable-diffusion"]
 	path = stable-diffusion
 	url = https://github.com/CompVis/stable-diffusion.git
+[submodule "pytorch-cifar100"]
+	path = pytorch-cifar100
+	url = https://github.com/weiaicunzai/pytorch-cifar100
